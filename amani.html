@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Amani's Test Results</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-eduwell-style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+<!--
+
+TemplateMo 573 EduWell
+
+https://templatemo.com/tm-573-eduwell
+
+-->
+  </head>
+
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                <nav class="main-nav">
+                  <!-- ***** Logo Start ***** -->
+                  <a href="index.html" class="logo">
+                      <img src="assets/images/templatemo-eduwell.png" alt="EduWell Template">
+                  </a>
+                  <!-- ***** Logo End ***** -->
+                  <!-- ***** Menu Start ***** -->
+                  <ul class="nav">
+                    <li><a href="team.html">Go Back</a></li>
+                  </ul>
+                  <a class='menu-trigger'>
+                      <span>Menu</span>
+                  </a>
+                  <!-- ***** Menu End ***** -->
+                </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <section class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="header-text">
+            <h1>Amani's Test Results</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="more-info">
+    <div class="container">
+      <div class="row">
+        <div >
+          <div class="section-heading">
+            <h4>My Myers-Briggs Test Results</h4>
+          </div>
+          <img src="assets/images/Amani Myers Briggs.png">
+          <p>The personality trait INFP (introverted, intuitive, feeling and perceiving) is my result for the Myers-Briggs personality test. Looking into the INFP trait, they tend to be sensitive, creative, and compassionate. Focusing on the creative characteristic, this is an advantage when engaging in group work as it provides the team with a creative perspective forming ideas. On the other hand, even though individuals who are a part of the INFP group are found to possess compassionate and caring qualities, the test emphasises they are most comfortable working independently than in a group setting. While this might be true, it highlights that people of this trait should find the opportunity to work in a team to improve themselves in this area. On a positive note, being a part of a team, they can showcase their mediation skills to assist with any future conflict that might arise. On a whole, being an INFP offers any team a great deal of advantages and disadvantages but it is how the individual themselves work around those disadvantages to overcome any endeavours.    </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="more-info">
+    <div class="container">
+      <div class="row">
+        <div >
+          <div class="section-heading">
+            <h4>My Learning Style Test Results</h4>
+          </div>
+          <img src="assets/images/Amani learning style.png">
+          <p>Another test result is from the learning style test which splits into three distinct types: auditory, tactile, and visual. After being assigned as a tactile learner, the test informs that I learn the best with hands-on experience and physical activities. A handicap that may appear as a tactile learner is communicating ideas through online platforms. As online platforms are an easier way to communicate group work, it can be challenging to comprehend certain concepts just by messaging a team instead of face to face. A way to eliminate this issue is to suggest scheduling team meetings on a Zoom call or any platform that can be in a group call. This is to engage a tactile learner to grasp any complicated concepts with questions that can be answered by the team together.    </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="more-info">
+    <div class="container">
+      <div class="row">
+        <div >
+          <div class="section-heading">
+            <h4>My Personality Test Results</h4>
+          </div>
+          <img src="assets/images/Amani disc test.png">
+          <p>The last test result is from the DISC personality test that assesses an individual’s personality and behavioural style into four styles: dominance, influence, steadiness and compliance. My test results produced a score of 38% in steadiness, 29% in dominance, 18% compliance and 15% in influence. With steadiness being at the top, it indicates that the individual tends to be reliable, patient and consistent in their behaviour. People with a high level of steadiness may be calm and patient in stressful situations and may be able to maintain their composure even when facing challenges or changes. While also being able to maintain a strong composure under pressure, it works in favour when dealing with group work when stressful issues appear.   </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+  <br>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+
+</body>
+</html>

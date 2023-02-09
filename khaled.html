@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Personality Test Results</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-eduwell-style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+<!--
+
+TemplateMo 573 EduWell
+
+https://templatemo.com/tm-573-eduwell
+
+-->
+  </head>
+
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                <nav class="main-nav">
+                  <!-- ***** Logo Start ***** -->
+                  <a href="index.html" class="logo">
+                      <img src="assets/images/templatemo-eduwell.png" alt="EduWell Template">
+                  </a>
+                  <!-- ***** Logo End ***** -->
+                  <!-- ***** Menu Start ***** -->
+                  <ul class="nav">
+                    <li><a href="team.html">Go Back</a></li>
+                  </ul>
+                  <a class='menu-trigger'>
+                      <span>Menu</span>
+                  </a>
+                  <!-- ***** Menu End ***** -->
+                </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <section class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="header-text">
+            <h1>Khaled Elmasri's Personality Test Results</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="more-info">
+    <div class="container">
+      <div class="row">
+        <div >
+          <div class="section-heading">
+            <h4>My Myers-Briggs Test Results</h4>
+          </div>
+          <img src="assets/images/16Personality.JPG">
+          <p>For more information about my Myers-Briggs results: <a href="https://www.16personalities.com/infj-personality">My Full Results</a>  </p>
+		  <p>From my previous assessment the results have changed, which did prove my point that these tests don't directly relate to someone, however they are broad enough to relate to everyone.</p>
+		  <p>This may help my group get an idea of how well I would work once we start assigning any work and whether I'm a personailty they are able to work with.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="more-info">
+    <div class="container">
+      <div class="row">
+        <div >
+          <div class="section-heading">
+            <h4>My Learning Style Test Results</h4>
+          </div>
+          <img src="assets/images/ISTJLearner.JPG">
+          <p>I'm not entirely sure what this may help my team with. This could mean that they might like that I'm cold and aloof or that I have a "devotion to duty" which might make some of my workmates happy as it implies that I'd get straight to the point. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="more-info">
+    <div class="container">
+      <div class="row">
+        <div >
+          <div class="section-heading">
+            <h4>My Personality Test Results</h4>
+          </div>
+          <img src="assets/images/TheBig5PersonalityTest.JPG">
+          <p>If you would like more information on this test, please proceed to: <a href="https://bigfive-test.com/result/639d476aeb231b0008395a52">My Full Results</a></p>
+          <p>This test in particular will provide me with a great first impression if they had not spoken to me beforehand. As Agreeableness is in the high percentile and is great for team work. Agreeableness reflects concern with cooperation and group cohesion: meaning I value getting along with others.</p>
+		</div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+  <br>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+
+</body>
+</html>
